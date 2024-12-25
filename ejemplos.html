@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+
+        h3 {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        h4 {
+            color: #555;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px auto;
+            line-height: 1.8;
+            width: 80%;
+        }
+
+        hr {
+            border: 0;
+            border-top: 3px solid #ccc;
+            margin: 30px 0;
+            width: 90%;
+        }
+
+        ul,
+        ol {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto;
+            padding-left: 20px;
+            background-color: #eaf7f7;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 90%;
+            text-align: center;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 90%;
+            max-width: 600px;
+            height: 315px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Demostración de una estructura básica de HTML</h3>
+    <p>HTML es el lenguaje utilizado para estructurar contenido en la web. Como todos sabemos, una página web lleva una
+        variedad de códigos y muchas cosas que se pueden hacer en este diseño y desarrollo web.</p>
+    <a href="diseñoweb.html">regresar</a>
+    <hr>
+
+    <h3>Te mostramos cómo crear enlaces y listas en HTML:</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Structuring_content/Creating_links"
+                target="_blank">Enlace a un sitio web externo</a></li>
+        <li><a href="#top">Enlace de anclaje hacia arriba de la página</a></li>
+    </ul>
+
+    <h4>Lista de elementos que puedas utilizar en menús y otras cosas:</h4>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <h3>Demostración de un Formulario Simple</h3>
+    <p>Los formularios en HTML se utilizan para recoger datos del usuario. Aquí tienes un ejemplo:</p>
+    <form action="enviar_datos.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Demostración de Imágenes y Multimedia</h3>
+    <p>En HTML puedes agregar imágenes y contenido multimedia, también editar el tamaño y anchura:</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk3UsEnqlV7-9ez81c4MIhTkxGALwrFn1VTg&s"
+        alt="Imagen 1">
+    <img src="https://mediodigital.mx/wp-content/uploads/2022/03/image-2023-06-23T143256.449.png" alt="Imagen 2">
+    <img src="https://codersfree.nyc3.cdn.digitaloceanspaces.com/posts/diseno-web-que-es-y-para-que-sirve.jpg"
+        alt="Imagen 3">
+
+    <h4>Video incrustado:</h4>
+    <iframe src="https://www.youtube.com/embed/ELSm-G201Ls?si=oQxqNXiSQWIPdOdg" title="YouTube video player"
+        allowfullscreen></iframe>
+
+    <h3>Demostración de una Tabla</h3>
+    <p>A continuación, un ejemplo de cómo crear una tabla en HTML:</p>
+    <p> Una tabla es un conjunto estructurado de datos distribuidos en filas y columnas (datos tabulados).
+        Una tabla permite buscar con rapidez y facilidad valores entre diferentes tipos de datos que indiquen algún tipo
+        de conexión.
+        Por ejemplo, una persona y su edad, o un día de la semana o el horario de una piscina municipal.</p>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Ciudad</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+            <td>Madrid</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>30</td>
+            <td>Barcelona</td>
+        </tr>
+    </table>
+</body>
+
+</html>
